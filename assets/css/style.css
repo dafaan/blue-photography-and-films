@@ -15,6 +15,10 @@ p {
   color: #000;
 }
 
+.gal_img{
+  height: 350px;
+}
+
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
