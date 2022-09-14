@@ -1,398 +1,543 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block image %}
-<section class="ftco-cover" style="background-image: url(static/images/DSC_4612.jpg);" id="section-home">
-	<div class="container">
-	  	<div class="row align-items-center justify-content-center text-center ftco-vh-100">
-			<div class="col-md-12" style="margin-top: 300px;">
-				<h1 class="ftco-heading ftco-animate mb-3 w3-text-white">Blue photography and films</h1>
-				<h4 class="w3-text-white" style="font-size:30px;">Creativity Oversimplified</h4>    
-				<!--<p><a href="https://free-template.co/" target="_blank" class="btn btn-outline-white btn-lg ftco-animate" data-toggle="modal" data-target="#reservationModal">Reservation</a></p>-->
-			</div>
-		</div>
-	</div>
-</section>
+{% block content %}
 
-{% endblock %}
-
-{% block two %}
-<section class="ftco-section" id="section-about">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-5 ftco-animate mb-5">
-				<h4 class="ftco-sub-title w3-text-red">About us</h4>
-				<h2 class="ftco-primary-title display-4"></h2>
-				<p>Blue photography and films is a hub of very innovative minds, passionate hearts and skillful hands with a mandate to entertain, inform and educate using creative methods of arts and entertainment. Amos Tanko runs the company and leads a viable team of content producers, directors, art directors, editors, cinematographers and other talents.</p>
-				<p><a href="about/" class="btn btn-secondary btn-lg w3-text-red">Continue Reading</a></p>
-			</div>
-			<div class="col-md-1"></div>
-			<div class="col-md-6 ftco-animate img" data-animate-effect="fadeInRight">
-				<img src="{% static 'images/DSC_0949.jpg' %}" alt="Free Template by Free-Template.co" style="height: 350px; width:100%;">
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="ftco-section bg-light" id="section-offer">
-	<div class="container" style="margin-top:-150px;">
-		
-		<div class="row">
-			<div class="col-md-12 text-center mb-5 ftco-animate">
-				<h4 class="ftco-sub-title">... Our Offers ...</h4>
-				<h2 class="display-4">What We Do</h2>
-				<div class="row justify-content-center">
-					<div class="col-md-7">
-						<p class="lead">All products and services provided by Blue Studios.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-12">
-				<div class="owl-carousel ftco-owl">
-					<div class="item">
-						<div class="media d-block mb-4 text-center ftco-media ftco-animate border-0">
-							<img src="{% static 'images/offer_1.jpg' %}" alt="image" class="img-fluid">
-							<div class="media-body p-md-5 p-4">
-								<h5 class="mt-0 h4">Photography</h5>
-								<p class="mb-4">Top notch photography presented in high quality</p>
-
-								<p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Book session Now!</a></p>
-							</div>
-						</div>
-					</div>
-
-					<div class="item">
-						<div class="media d-block mb-4 text-center ftco-media ftco-animate border-0">
-							<img src="{% static 'images/offer_2.jpg' %}" alt="image" class="img-fluid">
-							<div class="media-body p-md-5 p-4">
-								<h5 class="mt-0 h4">Video coverage and editing</h5>
-								<p class="mb-4">Undoubtedly the grand masters of video.</p>
-
-								<p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Book session Now!</a></p>
-							</div>
-						</div>
-					</div>
-					
-					<div class="item">
-						<div class="media d-block mb-4 text-center ftco-media ftco-animate border-0">
-							<img src="{% static 'images/offer_3.jpg' %}" alt="image" class="img-fluid">
-							<div class="media-body p-md-5 p-4">
-								<h5 class="mt-0 h4">graphics design and printing</h5>
-								<p class="mb-4">great graphics team</p>
-
-								<p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Book session Now!</a></p>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-			
-		</div>
-	</div>
-</section>
-<!-- END section -->
-{% endblock %}
-
-{% block gallery %}
-<div class="container">
-	<section class="ftco-section" id="section-gallery">
-		<div class="container">
-			<div class="row ftco-custom-gutters">
-	
-				<div class="col-md-12 text-center mb-5 ftco-animate">
-					<h2 class="display-4">Gallery</h2>
-					<div class="row justify-content-center">
-						<div class="col-md-7">
-							<hr>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<a href="{% static 'images/dsc_0285.jpg' %}" class="ftco-thumbnail image-popup">
-						<img src="{% static 'images/dsc_0285.jpg' %}" alt="Free Template by Free-Template.co" class="img-fluid gal_img">
-					</a>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<a href="{% static 'images/dsc_0566.jpg' %}" class="ftco-thumbnail image-popup">
-						<img src="{% static 'images/dsc_0566.jpg' %}" alt="Free Template by Free-Template.co" class="img-fluid gal_img">
-					</a>
-				</div>
-	
-				<div class="col-md-4 ftco-animate">
-					<a href="{% static 'images/dsc_0999.jpg' %}" class="ftco-thumbnail image-popup">
-						<img src="{% static 'images/dsc_0999.jpg' %}" alt="Free Template by Free-Template.co" class="img-fluid gal_img">
-					</a>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<a href="{% static 'images/dsc_4729.jpg' %}" class="ftco-thumbnail image-popup">
-						<img src="{% static 'images/dsc_4729.jpg' %}" alt="Free Template by Free-Template.co" class="img-fluid gal_img">
-					</a>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<a href="{% static 'images/dsc_1291.jpg' %}" class="ftco-thumbnail image-popup">
-						<img src="{% static 'images/dsc_1291.jpg' %}" alt="Free Template by Free-Template.co" class="img-fluid gal_img">
-					</a>
-				</div>
-	
-			</div>
-		</div>
-	</section>
+<!-- Hero Start -->
+<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+    <div class="container py-5">
+        <div class="row justify-content-start">
+            <div class="col-lg-8 text-center text-lg-start">
+                <br><br>
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5" style="border-color: rgba(256, 256, 256, .3) !important;">Welcome To Blue Studios</h5>
+                <br>
+                <h1 class="display-1 text-white mb-md-4">State of the art photography</h1>
+                <div class="pt-2">
+                    <a href="" class="btn btn-light rounded-pill py-md-3 px-md-5 mx-2">book appointment</a>
+                    <a href="" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">services</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- Hero End -->
+
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded" src="{% static 'img/mp.jpg' %}" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="mb-4">
+                    <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
+                    <h1 class="display-4">Challenging the norms of photography</h1>
+                </div>
+                <p>Blue photography and films is a hub of very innovative minds, passionate hearts and skillful hands with a mandate to entertain, inform and educate using creative methods of arts and entertainment. Amos Tanko runs the company and leads a viable team of content producers, directors, art directors, editors, cinematographers and other talents.</p>
+                <a href="" class="btn btn-outline-light rounded-pill py-md-3 px-md-5 mx-2">continue reading</a>
+                <div class="row g-3 pt-3">
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-user-md text-primary mb-3"></i>
+                            <h6 class="mb-0">Top notch photography<small class="d-block text-primary">guaranteed</small></h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-procedures text-primary mb-3"></i>
+                            <h6 class="mb-0">Video Coverage<small class="d-block text-primary">and editing</small></h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-microscope text-primary mb-3"></i>
+                            <h6 class="mb-0">Events coverage<small class="d-block text-primary">and production</small></h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
+                            <h6 class="mb-0">video documentaries<small class="d-block text-primary">and success stories</small></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
 {% endblock %}
 
+<body>
 
-		
-		<!-- END section -->
-		
-		
-		<!-- END section -->
-		
 
-		
-		
-		<section class="ftco-section" id="section-menu">
-			<div class="container">
-				<div class="row">
+    
+    
 
-					<div class="col-md-12 text-center">
-						<div class="tab-content text-left">
-							<div class="tab-pane fade show active" id="pills-breakfast" role="tabpanel" aria-labelledby="pills-breakfast-tab">
-								<div class="row">
-									<div class="col-md-6 ftco-animate">
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane fade" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab">
-								<div class="row">
-									<div class="col-md-6 ftco-animate">
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Services</h5>
+                <h1 class="display-4">Excellent Medical Services</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-2x fa-user-md text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Emergency Care</h4>
+                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
+                        <a class="btn btn-lg btn-primary rounded-pill" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-2x fa-procedures text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Operation & Surgery</h4>
+                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
+                        <a class="btn btn-lg btn-primary rounded-pill" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-2x fa-stethoscope text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Outdoor Checkup</h4>
+                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
+                        <a class="btn btn-lg btn-primary rounded-pill" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-2x fa-ambulance text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Ambulance Service</h4>
+                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
+                        <a class="btn btn-lg btn-primary rounded-pill" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-2x fa-pills text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Medicine & Pharmacy</h4>
+                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
+                        <a class="btn btn-lg btn-primary rounded-pill" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon mb-4">
+                            <i class="fa fa-2x fa-microscope text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Blood Testing</h4>
+                        <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit</p>
+                        <a class="btn btn-lg btn-primary rounded-pill" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
 
-										<div class="media menu-item">
-											<img class="mr-3" src="{% static 'images/menu_3.jpg' %}" class="img-fluid" alt="Free Template by Free-Template.co">
-											<div class="media-body">
-												<h5 class="mt-0">Fried Potato w/ Garlic</h5>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-												<h6 class="text-primary menu-price">$14.50</h6>
-											</div>
-										</div>
 
-										<div class="media menu-item">
-											<img class="mr-3" src="{% static 'images/menu_1.jpg' %}" class="img-fluid" alt="Free Template by Free-Template.co">
-											<div class="media-body">
-												<h5 class="mt-0">Salted Fried Chicken</h5>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-												<h6 class="text-primary menu-price">$35.50</h6>
-											</div>
-										</div>
+    <!-- Appointment Start -->
+    <div class="container-fluid bg-primary my-5 py-5">
+        <div class="container py-5">
+            <div class="row gx-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Appointment</h5>
+                        <h1 class="display-4">Make An Appointment For Your Family</h1>
+                    </div>
+                    <p class="text-white mb-5">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                    <a class="btn btn-dark rounded-pill py-3 px-5 me-3" href="">Find Doctor</a>
+                    <a class="btn btn-outline-dark rounded-pill py-3 px-5" href="">Read More</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-white text-center rounded p-5">
+                        <h1 class="mb-4">Book An Appointment</h1>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select bg-light border-0" style="height: 55px;">
+                                        <option selected>Choose Department</option>
+                                        <option value="1">Department 1</option>
+                                        <option value="2">Department 2</option>
+                                        <option value="3">Department 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select bg-light border-0" style="height: 55px;">
+                                        <option selected>Select Doctor</option>
+                                        <option value="1">Doctor 1</option>
+                                        <option value="2">Doctor 2</option>
+                                        <option value="3">Doctor 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="date" id="date" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control bg-light border-0 datetimepicker-input"
+                                            placeholder="Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="time" id="time" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control bg-light border-0 datetimepicker-input"
+                                            placeholder="Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Make An Appointment</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
 
-										<div class="media menu-item">
-											<img class="mr-3" src="{% static 'images/menu_2.jpg' %}" class="img-fluid" alt="Free Template by Free-Template.co">
-											<div class="media-body">
-												<h5 class="mt-0">Italian Sauce Mushroom</h5>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-												<h6 class="text-primary menu-price">$24.50</h6>
-											</div>
-										</div>
 
-									</div>
-									<div class="col-md-6 ftco-animate">
+    <!-- Pricing Plan Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Medical Packages</h5>
+                <h1 class="display-4">Awesome Medical Programs</h1>
+            </div>
+            <div class="owl-carousel price-carousel position-relative" style="padding: 0 45px 45px 45px;">
+                <div class="bg-light rounded text-center">
+                    <div class="position-relative">
+                        <img class="img-fluid rounded-top" src="img/price-1.jpg" alt="">
+                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                            <h3 class="text-white">Pregnancy Care</h3>
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>49<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="text-center py-5">
+                        <p>Emergency Medical Treatment</p>
+                        <p>Highly Experienced Doctors</p>
+                        <p>Highest Success Rate</p>
+                        <p>Telephone Service</p>
+                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
+                    </div>
+                </div>
+                <div class="bg-light rounded text-center">
+                    <div class="position-relative">
+                        <img class="img-fluid rounded-top" src="img/price-2.jpg" alt="">
+                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                            <h3 class="text-white">Health Checkup</h3>
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>99<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="text-center py-5">
+                        <p>Emergency Medical Treatment</p>
+                        <p>Highly Experienced Doctors</p>
+                        <p>Highest Success Rate</p>
+                        <p>Telephone Service</p>
+                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
+                    </div>
+                </div>
+                <div class="bg-light rounded text-center">
+                    <div class="position-relative">
+                        <img class="img-fluid rounded-top" src="img/price-3.jpg" alt="">
+                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                            <h3 class="text-white">Dental Care</h3>
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>149<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="text-center py-5">
+                        <p>Emergency Medical Treatment</p>
+                        <p>Highly Experienced Doctors</p>
+                        <p>Highest Success Rate</p>
+                        <p>Telephone Service</p>
+                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
+                    </div>
+                </div>
+                <div class="bg-light rounded text-center">
+                    <div class="position-relative">
+                        <img class="img-fluid rounded-top" src="img/price-4.jpg" alt="">
+                        <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
+                            <h3 class="text-white">Operation & Surgery</h3>
+                            <h1 class="display-4 text-white mb-0">
+                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small>199<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="text-center py-5">
+                        <p>Emergency Medical Treatment</p>
+                        <p>Highly Experienced Doctors</p>
+                        <p>Highest Success Rate</p>
+                        <p>Telephone Service</p>
+                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Plan End -->
 
-										<div class="media menu-item">
-											<img class="mr-3" src="{% static 'images/menu_3.jpg' %}" class="img-fluid" alt="Free Template by Free-Template.co">
-											<div class="media-body">
-												<h5 class="mt-0">Fried Potato w/ Garlic</h5>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-												<h6 class="text-primary menu-price">$18.50</h6>
-											</div>
-										</div>
 
-										<div class="media menu-item">
-											<img class="mr-3" src="{% static 'images/menu_2.jpg' %}" class="img-fluid" alt="Free Template by Free-Template.co">
-											<div class="media-body">
-												<h5 class="mt-0">Italian Sauce Mushroom</h5>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-												<h6 class="text-primary menu-price">$35.50</h6>
-											</div>
-										</div>
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Our Doctors</h5>
+                <h1 class="display-4">Qualified Healthcare Professionals</h1>
+            </div>
+            <div class="owl-carousel team-carousel position-relative">
+                <div class="team-item">
+                    <div class="row g-0 bg-light rounded overflow-hidden">
+                        <div class="col-12 col-sm-5 h-100">
+                            <img class="img-fluid h-100" src="img/team-1.jpg" style="object-fit: cover;">
+                        </div>
+                        <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                            <div class="mt-auto p-4">
+                                <h3>Doctor Name</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
+                                <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                            </div>
+                            <div class="d-flex mt-auto border-top p-4">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="row g-0 bg-light rounded overflow-hidden">
+                        <div class="col-12 col-sm-5 h-100">
+                            <img class="img-fluid h-100" src="img/team-2.jpg" style="object-fit: cover;">
+                        </div>
+                        <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                            <div class="mt-auto p-4">
+                                <h3>Doctor Name</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
+                                <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                            </div>
+                            <div class="d-flex mt-auto border-top p-4">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <div class="row g-0 bg-light rounded overflow-hidden">
+                        <div class="col-12 col-sm-5 h-100">
+                            <img class="img-fluid h-100" src="img/team-3.jpg" style="object-fit: cover;">
+                        </div>
+                        <div class="col-12 col-sm-7 h-100 d-flex flex-column">
+                            <div class="mt-auto p-4">
+                                <h3>Doctor Name</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
+                                <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                            </div>
+                            <div class="d-flex mt-auto border-top p-4">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
 
-										<div class="media menu-item">
-											<img class="mr-3" src="{% static 'images/menu_1.jpg' %}" class="img-fluid" alt="Free Template by Free-Template.co">
-											<div class="media-body">
-												<h5 class="mt-0">Salted Fried Chicken</h5>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-												<h6 class="text-primary menu-price">$12.50</h6>
-											</div>
-										</div>
 
-										
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane fade" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab">
-								<div class="row">
-									<div class="col-md-6 ftco-animate">
+    <!-- Search Start -->
+    <div class="container-fluid bg-primary my-5 py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Find A Doctor</h5>
+                <h1 class="display-4 mb-4">Find A Healthcare Professionals</h1>
+                <h5 class="text-white fw-normal">Duo ipsum erat stet dolor sea ut nonumy tempor. Tempor duo lorem eos sit sed ipsum takimata ipsum sit est. Ipsum ea voluptua ipsum sit justo</h5>
+            </div>
+            <div class="mx-auto" style="width: 100%; max-width: 600px;">
+                <div class="input-group">
+                    <select class="form-select border-primary w-25" style="height: 60px;">
+                        <option selected>Department</option>
+                        <option value="1">Department 1</option>
+                        <option value="2">Department 2</option>
+                        <option value="3">Department 3</option>
+                    </select>
+                    <input type="text" class="form-control border-primary w-50" placeholder="Keyword">
+                    <button class="btn btn-dark border-0 w-25">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search End -->
 
-										<div class="media menu-item">
-											<img class="mr-3" src="{% static 'images/menu_2.jpg' %}" class="img-fluid" alt="Free Template by Free-Template.co">
-											<div class="media-body">
-												<h5 class="mt-0">Italian Sauce Mushroom</h5>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-												<h6 class="text-primary menu-price">$24.50</h6>
-											</div>
-										</div>
 
-										<div class="media menu-item">
-											<img class="mr-3" src="{% static 'images/menu_1.jpg' %}" class="img-fluid" alt="Free Template by Free-Template.co">
-											<div class="media-body">
-												<h5 class="mt-0">Salted Fried Chicken</h5>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-												<h6 class="text-primary menu-price">$35.50</h6>
-											</div>
-										</div>
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Testimonial</h5>
+                <h1 class="display-4">Patients Say About Our Services</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/testimonial-1.jpg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4 fw-normal">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                            <hr class="w-25 mx-auto">
+                            <h3>Patient Name</h3>
+                            <h6 class="fw-normal text-primary mb-3">Profession</h6>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/testimonial-2.jpg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4 fw-normal">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                            <hr class="w-25 mx-auto">
+                            <h3>Patient Name</h3>
+                            <h6 class="fw-normal text-primary mb-3">Profession</h6>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle mx-auto" src="img/testimonial-3.jpg" alt="">
+                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
+                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-4 fw-normal">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat. Erat dolor rebum sit ipsum.</p>
+                            <hr class="w-25 mx-auto">
+                            <h3>Patient Name</h3>
+                            <h6 class="fw-normal text-primary mb-3">Profession</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
 
-										<div class="media menu-item">
-											<img class="mr-3" src="{% static 'images/menu_3.jpg' %}" class="img-fluid" alt="Free Template by Free-Template.co">
-											<div class="media-body">
-												<h5 class="mt-0">Fried Potato w/ Garlic</h5>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-												<h6 class="text-primary menu-price">$14.50</h6>
-											</div>
-										</div>
 
-									</div>
-									<div class="col-md-6 ftco-animate">
-
-										<div class="media menu-item">
-											<img class="mr-3" src="{% static 'images/menu_3.jpg' %}" class="img-fluid" alt="Free Template by Free-Template.co">
-											<div class="media-body">
-												<h5 class="mt-0">Fried Potato w/ Garlic</h5>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-												<h6 class="text-primary menu-price">$18.50</h6>
-											</div>
-										</div>
-
-										<div class="media menu-item">
-											<img class="mr-3" src="{% static 'images/menu_2.jpg' %}" class="img-fluid" alt="Free Template by Free-Template.co">
-											<div class="media-body">
-												<h5 class="mt-0">Italian Sauce Mushroom</h5>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-												<h6 class="text-primary menu-price">$35.50</h6>
-											</div>
-										</div>
-
-										<div class="media menu-item">
-											<img class="mr-3" src="{% static 'images/menu_1.jpg' %}" class="img-fluid" alt="Free Template by Free-Template.co">
-											<div class="media-body">
-												<h5 class="mt-0">Salted Fried Chicken</h5>
-												<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-												<h6 class="text-primary menu-price">$12.50</h6>
-											</div>
-										</div>
-
-										
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END section -->
-
-		<section class="ftco-section bg-light" id="section-news">
-			<div class="container">
-
-				<div class="row">
-					<div class="col-md-12 text-center mb-5 ftco-animate">
-						<h2 class="display-4">News &amp; Events</h2>
-						<div class="row justify-content-center">
-							<div class="col-md-7">
-								<p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="media d-block mb-4 text-center ftco-media ftco-animate">
-							<img src="{% static 'images/offer_1.jpg' %}" alt="Free Template by Free-Template.co" class="img-fluid">
-							<div class="media-body p-md-5 p-4">
-								<h5 class="mt-0 h4">In Taste Restaurant</h5>
-								<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-
-								<p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="media d-block mb-4 text-center ftco-media ftco-animate">
-							<img src="{% static 'images/offer_2.jpg' %}" alt="Free Template by Free-Template.co" class="img-fluid">
-							<div class="media-body p-md-5 p-4">
-								<h5 class="mt-0 h4">Chef Special Menu</h5>
-								<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-
-								<p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6">
-						<div class="media d-block mb-4 text-center ftco-media ftco-animate">
-							<img src="{% static 'images/offer_3.jpg' %}" alt="Free Template by Free-Template.co" class="img-fluid">
-							<div class="media-body p-md-5 p-4">
-								<h5 class="mt-0 h4">Merriage Celebrations</h5>
-								<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-
-								<p class="mb-0"><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END section -->
-
-		
-		<!-- END section -->
-
-		<section class="ftco-section bg-light" id="section-contact">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-md-12 text-center mb-5 ftco-animate">
-						<h2 class="display-4">Contact Us</h2>
-						<div class="row justify-content-center">
-							<div class="col-md-7">
-								<p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md mb-5 ftco-animate">
-						<form action="" method="post">
-							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="text" class="form-control" id="name" placeholder="Enter your name">
-							</div>
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="text" class="form-control" id="email" placeholder="Enter your email">
-							</div>
-							<div class="form-group">
-								<label for="message" class="sr-only">Message</label>
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Write your message"></textarea>
-							</div>
-							<div class="form-group">
-								<input type="submit" class="btn btn-primary btn-lg" value="Send Message">
-							</div>
-						</form>
-					</div>
-					
-				</div>
-			</div>
-		</section>
-		<div id="map"></div>
-		<!-- END section -->
-		
-
-		
+    <!-- Blog Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Blog Post</h5>
+                <h1 class="display-4">Our Latest Medical Blog Posts</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-xl-4 col-lg-6">
+                    <div class="bg-light rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="img/blog-1.jpg" alt="">
+                        <div class="p-4">
+                            <a class="h3 d-block mb-3" href="">Dolor clita vero elitr sea stet dolor justo  diam</a>
+                            <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
+                                rebum clita rebum dolor stet amet justo</p>
+                        </div>
+                        <div class="d-flex justify-content-between border-top p-4">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle me-2" src="img/user.jpg" width="25" height="25" alt="">
+                                <small>John Doe</small>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <small class="ms-3"><i class="far fa-eye text-primary me-1"></i>12345</small>
+                                <small class="ms-3"><i class="far fa-comment text-primary me-1"></i>123</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="bg-light rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="img/blog-2.jpg" alt="">
+                        <div class="p-4">
+                            <a class="h3 d-block mb-3" href="">Dolor clita vero elitr sea stet dolor justo  diam</a>
+                            <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
+                                rebum clita rebum dolor stet amet justo</p>
+                        </div>
+                        <div class="d-flex justify-content-between border-top p-4">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle me-2" src="img/user.jpg" width="25" height="25" alt="">
+                                <small>John Doe</small>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <small class="ms-3"><i class="far fa-eye text-primary me-1"></i>12345</small>
+                                <small class="ms-3"><i class="far fa-comment text-primary me-1"></i>123</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6">
+                    <div class="bg-light rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="img/blog-3.jpg" alt="">
+                        <div class="p-4">
+                            <a class="h3 d-block mb-3" href="">Dolor clita vero elitr sea stet dolor justo  diam</a>
+                            <p class="m-0">Dolor lorem eos dolor duo et eirmod sea. Dolor sit magna
+                                rebum clita rebum dolor stet amet justo</p>
+                        </div>
+                        <div class="d-flex justify-content-between border-top p-4">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle me-2" src="img/user.jpg" width="25" height="25" alt="">
+                                <small>John Doe</small>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <small class="ms-3"><i class="far fa-eye text-primary me-1"></i>12345</small>
+                                <small class="ms-3"><i class="far fa-comment text-primary me-1"></i>123</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+    
+</body>
+    

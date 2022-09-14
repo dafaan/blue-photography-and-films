@@ -1,46 +1,51 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block about %}
-<section class="ftco-section" id="section-about">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-5 ftco-animate mb-5">
-				<h4 class="ftco-sub-title w3-text-red">About Us</h4>
-				<h2 class="ftco-primary-title display-4">blue studios</h2>
-				<p>Blue photography and films is a hub of very innovative minds, passionate hearts and skillful hands with a mandate to entertain, inform and educate using creative methods of arts and entertainment. Amos Tanko runs the company and leads a viable team of content producers, directors, art directors, editors, cinematographers and other talents.</p>
-
-				<p class="mb-4">Our team of professionals have been instrumental in the production and branding of your favourite documentaries, jingles and Free Medical Care for Society.
-
-					We based in Jos, Nigeria. We also have a very strong network with stakeholders in the media, arts, broadcast and entertainment industry around Nigeria.
-					We are committed to delivering quality and excellence.
-					
-				</p>
-				<p><a href="about/" class="btn btn-secondary btn-lg w3-text-red">Continue Reading</a></p>
-			</div>
-			<div class="col-md-1"></div>
-			<div class="col-md-6 ftco-animate img" data-animate-effect="fadeInRight">
-				<img src="{% static 'images/dsc_0999.jpg' %}" alt="image">
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="ftco-section" id="section-about">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-5 ftco-animate mb-5">
-				<h4 class="ftco-sub-title w3-text-red">What We Do</h4>
-				<p class="mb-4">
-					Our Video Production Services include Pre-production, Production and Post-production. 
-					We are a creative multimedia production agency that produces effective branded video content,
-					documentary, product photography, corporate videos, explainer animations, testimonials,
-					success stories, product videos, interviews, presentations, Landscaping Photograph,
-					Aerial Photography, event coverage, etc. Done With a unique and innovative approach to each project,
-					we take steps to understand your company’s culture, identity and position in the marketplace to produce engaging content that is unique to your brand.
-				</p>	
-			</div>
-		</div>
-	</div>
-</section>
+{% block content %}
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 500px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100 rounded" src="{% static 'img/about.jpg' %}" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="mb-4">
+                    <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
+                    <h1 class="display-4">Best Medical Care For Yourself and Your Family</h1>
+                </div>
+                <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
+                <div class="row g-3 pt-3">
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-user-md text-primary mb-3"></i>
+                            <h6 class="mb-0">Qualified<small class="d-block text-primary">Doctors</small></h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-procedures text-primary mb-3"></i>
+                            <h6 class="mb-0">Emergency<small class="d-block text-primary">Services</small></h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-microscope text-primary mb-3"></i>
+                            <h6 class="mb-0">Accurate<small class="d-block text-primary">Testing</small></h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-6">
+                        <div class="bg-light text-center rounded-circle py-4">
+                            <i class="fa fa-3x fa-ambulance text-primary mb-3"></i>
+                            <h6 class="mb-0">Free<small class="d-block text-primary">Ambulance</small></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
 {% endblock %}
